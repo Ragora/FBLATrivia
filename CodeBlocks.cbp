@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FBLA Trivia" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Linux">
+				<Option output="bin/FBLA Trivia_d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG_" />
+					<Add option="-DLINUX" />
+				</Compiler>
+				<Linker>
+					<Add library="libIrrlicht" />
+					<Add library="/lib/libIrrKlang.so" />
+					<Add library="pthread" />
+				</Linker>
+			</Target>
+			<Target title="Release Linux">
+				<Option output="bin/FBLA Trivia" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DLINUX" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libIrrlicht" />
+					<Add library="/lib/libIrrKlang.so" />
+					<Add library="pthread" />
+				</Linker>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="bin/FBLA Trivia_d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-D_DEBUG_" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="lib/libIrrlicht.a" />
+					<Add library="lib/libirrKlang.a" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="bin/FBLA Trivia" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="include" />
+			<Add directory="include/irrlicht" />
+			<Add directory="include/irrklang" />
+		</Compiler>
+		<Unit filename="include/CEventReceiver.h" />
+		<Unit filename="include/CGamePreferences.h" />
+		<Unit filename="include/CGameTime.h" />
+		<Unit filename="include/CIrrKlangController.h" />
+		<Unit filename="include/CIrrlichtController.h" />
+		<Unit filename="include/CLogHandle.h" />
+		<Unit filename="include/CLogManager.h" />
+		<Unit filename="include/CQuestionLoader.h" />
+		<Unit filename="include/CReference.h" />
+		<Unit filename="include/CSceneManager.h" />
+		<Unit filename="include/CXMLLoader.h" />
+		<Unit filename="include/RgString.h" />
+		<Unit filename="include/irrKlang.h" />
+		<Unit filename="include/irrklang/ik_ESoundEngineOptions.h" />
+		<Unit filename="include/irrklang/ik_ESoundOutputDrivers.h" />
+		<Unit filename="include/irrklang/ik_EStreamModes.h" />
+		<Unit filename="include/irrklang/ik_IAudioRecorder.h" />
+		<Unit filename="include/irrklang/ik_IAudioStream.h" />
+		<Unit filename="include/irrklang/ik_IAudioStreamLoader.h" />
+		<Unit filename="include/irrklang/ik_IFileFactory.h" />
+		<Unit filename="include/irrklang/ik_IFileReader.h" />
+		<Unit filename="include/irrklang/ik_IRefCounted.h" />
+		<Unit filename="include/irrklang/ik_ISound.h" />
+		<Unit filename="include/irrklang/ik_ISoundDeviceList.h" />
+		<Unit filename="include/irrklang/ik_ISoundEffectControl.h" />
+		<Unit filename="include/irrklang/ik_ISoundEngine.h" />
+		<Unit filename="include/irrklang/ik_ISoundMixedOutputReceiver.h" />
+		<Unit filename="include/irrklang/ik_ISoundSource.h" />
+		<Unit filename="include/irrklang/ik_ISoundStopEventReceiver.h" />
+		<Unit filename="include/irrklang/ik_IVirtualRefCounted.h" />
+		<Unit filename="include/irrklang/ik_SAudioStreamFormat.h" />
+		<Unit filename="include/irrklang/ik_irrKlangTypes.h" />
+		<Unit filename="include/irrklang/ik_vec3d.h" />
+		<Unit filename="include/irrklang/irrKlang.h" />
+		<Unit filename="include/irrlicht/CDynamicMeshBuffer.h" />
+		<Unit filename="include/irrlicht/CIndexBuffer.h" />
+		<Unit filename="include/irrlicht/CMeshBuffer.h" />
+		<Unit filename="include/irrlicht/CVertexBuffer.h" />
+		<Unit filename="include/irrlicht/EAttributes.h" />
+		<Unit filename="include/irrlicht/ECullingTypes.h" />
+		<Unit filename="include/irrlicht/EDebugSceneTypes.h" />
+		<Unit filename="include/irrlicht/EDeviceTypes.h" />
+		<Unit filename="include/irrlicht/EDriverFeatures.h" />
+		<Unit filename="include/irrlicht/EDriverTypes.h" />
+		<Unit filename="include/irrlicht/EGUIAlignment.h" />
+		<Unit filename="include/irrlicht/EGUIElementTypes.h" />
+		<Unit filename="include/irrlicht/EHardwareBufferFlags.h" />
+		<Unit filename="include/irrlicht/EMaterialFlags.h" />
+		<Unit filename="include/irrlicht/EMaterialTypes.h" />
+		<Unit filename="include/irrlicht/EMeshWriterEnums.h" />
+		<Unit filename="include/irrlicht/EMessageBoxFlags.h" />
+		<Unit filename="include/irrlicht/EPrimitiveTypes.h" />
+		<Unit filename="include/irrlicht/ESceneNodeAnimatorTypes.h" />
+		<Unit filename="include/irrlicht/ESceneNodeTypes.h" />
+		<Unit filename="include/irrlicht/EShaderTypes.h" />
+		<Unit filename="include/irrlicht/ETerrainElements.h" />
+		<Unit filename="include/irrlicht/IAnimatedMesh.h" />
+		<Unit filename="include/irrlicht/IAnimatedMeshMD2.h" />
+		<Unit filename="include/irrlicht/IAnimatedMeshMD3.h" />
+		<Unit filename="include/irrlicht/IAnimatedMeshSceneNode.h" />
+		<Unit filename="include/irrlicht/IAttributeExchangingObject.h" />
+		<Unit filename="include/irrlicht/IAttributes.h" />
+		<Unit filename="include/irrlicht/IBillboardSceneNode.h" />
+		<Unit filename="include/irrlicht/IBillboardTextSceneNode.h" />
+		<Unit filename="include/irrlicht/IBoneSceneNode.h" />
+		<Unit filename="include/irrlicht/ICameraSceneNode.h" />
+		<Unit filename="include/irrlicht/IColladaMeshWriter.h" />
+		<Unit filename="include/irrlicht/ICursorControl.h" />
+		<Unit filename="include/irrlicht/IDummyTransformationSceneNode.h" />
+		<Unit filename="include/irrlicht/IDynamicMeshBuffer.h" />
+		<Unit filename="include/irrlicht/IEventReceiver.h" />
+		<Unit filename="include/irrlicht/IFileArchive.h" />
+		<Unit filename="include/irrlicht/IFileList.h" />
+		<Unit filename="include/irrlicht/IFileSystem.h" />
+		<Unit filename="include/irrlicht/IGPUProgrammingServices.h" />
+		<Unit filename="include/irrlicht/IGUIButton.h" />
+		<Unit filename="include/irrlicht/IGUICheckBox.h" />
+		<Unit filename="include/irrlicht/IGUIColorSelectDialog.h" />
+		<Unit filename="include/irrlicht/IGUIComboBox.h" />
+		<Unit filename="include/irrlicht/IGUIContextMenu.h" />
+		<Unit filename="include/irrlicht/IGUIEditBox.h" />
+		<Unit filename="include/irrlicht/IGUIElement.h" />
+		<Unit filename="include/irrlicht/IGUIElementFactory.h" />
+		<Unit filename="include/irrlicht/IGUIEnvironment.h" />
+		<Unit filename="include/irrlicht/IGUIFileOpenDialog.h" />
+		<Unit filename="include/irrlicht/IGUIFont.h" />
+		<Unit filename="include/irrlicht/IGUIFontBitmap.h" />
+		<Unit filename="include/irrlicht/IGUIImage.h" />
+		<Unit filename="include/irrlicht/IGUIImageList.h" />
+		<Unit filename="include/irrlicht/IGUIInOutFader.h" />
+		<Unit filename="include/irrlicht/IGUIListBox.h" />
+		<Unit filename="include/irrlicht/IGUIMeshViewer.h" />
+		<Unit filename="include/irrlicht/IGUIScrollBar.h" />
+		<Unit filename="include/irrlicht/IGUISkin.h" />
+		<Unit filename="include/irrlicht/IGUISpinBox.h" />
+		<Unit filename="include/irrlicht/IGUISpriteBank.h" />
+		<Unit filename="include/irrlicht/IGUIStaticText.h" />
+		<Unit filename="include/irrlicht/IGUITabControl.h" />
+		<Unit filename="include/irrlicht/IGUITable.h" />
+		<Unit filename="include/irrlicht/IGUIToolbar.h" />
+		<Unit filename="include/irrlicht/IGUITreeView.h" />
+		<Unit filename="include/irrlicht/IGUIWindow.h" />
+		<Unit filename="include/irrlicht/IGeometryCreator.h" />
+		<Unit filename="include/irrlicht/IImage.h" />
+		<Unit filename="include/irrlicht/IImageLoader.h" />
+		<Unit filename="include/irrlicht/IImageWriter.h" />
+		<Unit filename="include/irrlicht/IIndexBuffer.h" />
+		<Unit filename="include/irrlicht/ILightManager.h" />
+		<Unit filename="include/irrlicht/ILightSceneNode.h" />
+		<Unit filename="include/irrlicht/ILogger.h" />
+		<Unit filename="include/irrlicht/IMaterialRenderer.h" />
+		<Unit filename="include/irrlicht/IMaterialRendererServices.h" />
+		<Unit filename="include/irrlicht/IMesh.h" />
+		<Unit filename="include/irrlicht/IMeshBuffer.h" />
+		<Unit filename="include/irrlicht/IMeshCache.h" />
+		<Unit filename="include/irrlicht/IMeshLoader.h" />
+		<Unit filename="include/irrlicht/IMeshManipulator.h" />
+		<Unit filename="include/irrlicht/IMeshSceneNode.h" />
+		<Unit filename="include/irrlicht/IMeshWriter.h" />
+		<Unit filename="include/irrlicht/IMetaTriangleSelector.h" />
+		<Unit filename="include/irrlicht/IOSOperator.h" />
+		<Unit filename="include/irrlicht/IParticleAffector.h" />
+		<Unit filename="include/irrlicht/IParticleAnimatedMeshSceneNodeEmitter.h" />
+		<Unit filename="include/irrlicht/IParticleAttractionAffector.h" />
+		<Unit filename="include/irrlicht/IParticleBoxEmitter.h" />
+		<Unit filename="include/irrlicht/IParticleCylinderEmitter.h" />
+		<Unit filename="include/irrlicht/IParticleEmitter.h" />
+		<Unit filename="include/irrlicht/IParticleFadeOutAffector.h" />
+		<Unit filename="include/irrlicht/IParticleGravityAffector.h" />
+		<Unit filename="include/irrlicht/IParticleMeshEmitter.h" />
+		<Unit filename="include/irrlicht/IParticleRingEmitter.h" />
+		<Unit filename="include/irrlicht/IParticleRotationAffector.h" />
+		<Unit filename="include/irrlicht/IParticleSphereEmitter.h" />
+		<Unit filename="include/irrlicht/IParticleSystemSceneNode.h" />
+		<Unit filename="include/irrlicht/IQ3LevelMesh.h" />
+		<Unit filename="include/irrlicht/IQ3Shader.h" />
+		<Unit filename="include/irrlicht/IRandomizer.h" />
+		<Unit filename="include/irrlicht/IReadFile.h" />
+		<Unit filename="include/irrlicht/IReferenceCounted.h" />
+		<Unit filename="include/irrlicht/ISceneCollisionManager.h" />
+		<Unit filename="include/irrlicht/ISceneLoader.h" />
+		<Unit filename="include/irrlicht/ISceneManager.h" />
+		<Unit filename="include/irrlicht/ISceneNode.h" />
+		<Unit filename="include/irrlicht/ISceneNodeAnimator.h" />
+		<Unit filename="include/irrlicht/ISceneNodeAnimatorCameraFPS.h" />
+		<Unit filename="include/irrlicht/ISceneNodeAnimatorCameraMaya.h" />
+		<Unit filename="include/irrlicht/ISceneNodeAnimatorCollisionResponse.h" />
+		<Unit filename="include/irrlicht/ISceneNodeAnimatorFactory.h" />
+		<Unit filename="include/irrlicht/ISceneNodeFactory.h" />
+		<Unit filename="include/irrlicht/ISceneUserDataSerializer.h" />
+		<Unit filename="include/irrlicht/IShaderConstantSetCallBack.h" />
+		<Unit filename="include/irrlicht/IShadowVolumeSceneNode.h" />
+		<Unit filename="include/irrlicht/ISkinnedMesh.h" />
+		<Unit filename="include/irrlicht/ITerrainSceneNode.h" />
+		<Unit filename="include/irrlicht/ITextSceneNode.h" />
+		<Unit filename="include/irrlicht/ITexture.h" />
+		<Unit filename="include/irrlicht/ITimer.h" />
+		<Unit filename="include/irrlicht/ITriangleSelector.h" />
+		<Unit filename="include/irrlicht/IVertexBuffer.h" />
+		<Unit filename="include/irrlicht/IVideoDriver.h" />
+		<Unit filename="include/irrlicht/IVideoModeList.h" />
+		<Unit filename="include/irrlicht/IVolumeLightSceneNode.h" />
+		<Unit filename="include/irrlicht/IWriteFile.h" />
+		<Unit filename="include/irrlicht/IXMLReader.h" />
+		<Unit filename="include/irrlicht/IXMLWriter.h" />
+		<Unit filename="include/irrlicht/IrrCompileConfig.h" />
+		<Unit filename="include/irrlicht/IrrlichtDevice.h" />
+		<Unit filename="include/irrlicht/Keycodes.h" />
+		<Unit filename="include/irrlicht/S3DVertex.h" />
+		<Unit filename="include/irrlicht/SAnimatedMesh.h" />
+		<Unit filename="include/irrlicht/SColor.h" />
+		<Unit filename="include/irrlicht/SExposedVideoData.h" />
+		<Unit filename="include/irrlicht/SIrrCreationParameters.h" />
+		<Unit filename="include/irrlicht/SKeyMap.h" />
+		<Unit filename="include/irrlicht/SLight.h" />
+		<Unit filename="include/irrlicht/SMaterial.h" />
+		<Unit filename="include/irrlicht/SMaterialLayer.h" />
+		<Unit filename="include/irrlicht/SMesh.h" />
+		<Unit filename="include/irrlicht/SMeshBuffer.h" />
+		<Unit filename="include/irrlicht/SMeshBufferLightMap.h" />
+		<Unit filename="include/irrlicht/SMeshBufferTangents.h" />
+		<Unit filename="include/irrlicht/SParticle.h" />
+		<Unit filename="include/irrlicht/SSharedMeshBuffer.h" />
+		<Unit filename="include/irrlicht/SSkinMeshBuffer.h" />
+		<Unit filename="include/irrlicht/SVertexIndex.h" />
+		<Unit filename="include/irrlicht/SVertexManipulator.h" />
+		<Unit filename="include/irrlicht/SViewFrustum.h" />
+		<Unit filename="include/irrlicht/SceneParameters.h" />
+		<Unit filename="include/irrlicht/aabbox3d.h" />
+		<Unit filename="include/irrlicht/coreutil.h" />
+		<Unit filename="include/irrlicht/dimension2d.h" />
+		<Unit filename="include/irrlicht/driverChoice.h" />
+		<Unit filename="include/irrlicht/fast_atof.h" />
+		<Unit filename="include/irrlicht/heapsort.h" />
+		<Unit filename="include/irrlicht/irrAllocator.h" />
+		<Unit filename="include/irrlicht/irrArray.h" />
+		<Unit filename="include/irrlicht/irrList.h" />
+		<Unit filename="include/irrlicht/irrMap.h" />
+		<Unit filename="include/irrlicht/irrMath.h" />
+		<Unit filename="include/irrlicht/irrString.h" />
+		<Unit filename="include/irrlicht/irrTypes.h" />
+		<Unit filename="include/irrlicht/irrXML.h" />
+		<Unit filename="include/irrlicht/irrlicht.h" />
+		<Unit filename="include/irrlicht/irrpack.h" />
+		<Unit filename="include/irrlicht/irrunpack.h" />
+		<Unit filename="include/irrlicht/line2d.h" />
+		<Unit filename="include/irrlicht/line3d.h" />
+		<Unit filename="include/irrlicht/matrix4.h" />
+		<Unit filename="include/irrlicht/path.h" />
+		<Unit filename="include/irrlicht/plane3d.h" />
+		<Unit filename="include/irrlicht/position2d.h" />
+		<Unit filename="include/irrlicht/quaternion.h" />
+		<Unit filename="include/irrlicht/rect.h" />
+		<Unit filename="include/irrlicht/triangle3d.h" />
+		<Unit filename="include/irrlicht/vector2d.h" />
+		<Unit filename="include/irrlicht/vector3d.h" />
+		<Unit filename="include/stdafx.h" />
+		<Unit filename="source/CEventReceiver.cpp" />
+		<Unit filename="source/CGamePreferences.cpp" />
+		<Unit filename="source/CGameTime.cpp" />
+		<Unit filename="source/CLogHandle.cpp" />
+		<Unit filename="source/CLogManager.cpp" />
+		<Unit filename="source/CQuestionLoader.cpp" />
+		<Unit filename="source/CSceneManager.cpp" />
+		<Unit filename="source/CXMLLoader.cpp" />
+		<Unit filename="source/RgString.cpp" />
+		<Unit filename="source/main.cpp" />
+		<Unit filename="source/mt.cc" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
